@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+
+debugger;
+$.get('icon/Smart City_Icon-04-svg.svg', function(data){
+    $('body').append(data.documentElement)
+})
+
+});
+
+
+
+function loadFile()
+	{
+//debugger;
+		//var fileElem = document.getElementById("fileElem").files[0];
+		var fileElem = new File(["svg"], "icon/Smart City_Icon-08-svg.svg", {type:'image/svg'});
+		//var fileElem = file("icon/Smart City_Icon-08-svg.svg");
+		//var name = fileElem.name;
+		var reader = new FileReader();
+		
+	    reader.onloadend = function(evt) {
+	    	if( evt.target.readyState==FileReader.DONE ) {
+			debugger;
+
+	    		s = evt.target.result;
+
+		    	s = s.replace(/\r\n/g,'\n');
+	    		$("#codeArea").val(s);
+			$("#codeArea").focus();
+		}
+    	};
+		reader.readAsText(fileElem);
+	}
+
+
+
+
+
+
+function fnc()
+{
+	debugger;
+
+}
+
+
+</script>
+
+<style>
+.icon{
+	background-image: url('icon/Smart City_Icon-08-svg.svg'), none;
+}
+</style>
+</head>
+<body>
+<input type="button" onclick="fnc();">
+<input type="file" multiple="" id="fileElem" name="fileElem[]" accept="image/svg+xml" onchange="loadFile()">
+<div id="codeDiv">
+		<textarea id="codeArea"></textarea>
+	</div>
+
+<p>If you click on me, I will disappear.</p>
+<p>Click me away!</p>
+<p>Click me too!</p>
+
+<img src='icon/Smart City_Icon-08-svg.svg'/>
+
+<div class="icon"></div>
+
+<embed src="icon/Smart City_Icon-08-svg.svg"/>
+
+<object id="svg1" type="image/svg+xml" data="icon/Smart City_Icon-08-svg.svg">   
+</object>
+
+
+
+
+
+</body>
+</html>
