@@ -1,0 +1,213 @@
+﻿
+body
+{
+    /*font-family:rsubold;*/
+    font-family: 'Kanit', sans-serif;
+    font-size:14px;
+}
+.gap
+{
+    height:20px;
+}
+.gap2
+{
+    height:10px;
+}
+.border
+{
+    border:solid 0px #d9d9d9;
+    padding:0px;
+    margin:0px;
+}
+.border1
+{
+    border:solid 1px #d9d9d9;
+    padding:10px;
+    margin:0px;
+    border-radius:4px;
+    behavior: url(PIE-1.0.0/PIE.htc);
+}
+.border1:hover
+{
+    border:solid 1px #4dd2ff;
+}
+.border2
+{
+    border:solid 1px #d9d9d9;
+    box-shadow: 0px 0px 0px #888888;
+    padding:10px;
+    margin:0px;
+    border-radius:4px;
+    behavior: url(PIE-1.0.0/PIE.htc);
+}
+.border2:hover
+{
+    box-shadow: 0px 0px 8px #D8D8D8;
+}
+.border3
+{
+    border:solid 1px #d9d9d9;
+    padding:10px;
+    margin:0px;
+    border-radius:4px;
+    behavior: url(PIE-1.0.0/PIE.htc);
+}
+div
+{
+    padding:0px;
+    margin:0px;
+}
+a
+{
+    /*color:White;*/
+}
+a:hover
+{
+    /*color:White;*/
+    text-decoration:underline;
+}
+@font-face {
+    font-family: 'rsubold';
+    src: url('../fonts/rsu_bold.eot');
+    src: url('../fonts/rsu_bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rsu_bold.woff2') format('woff2'),
+         url('../fonts/rsu_bold.woff') format('woff'),
+         url('../fonts/rsu_bold.ttf') format('truetype'),
+         url('../fonts/rsu_bold.svg#rsubold') format('svg');
+    font-weight:normal;
+    font-style: normal;
+}
+span
+{
+    /*font-family:rsubold;*/
+    font-family: 'Kanit', sans-serif;
+    font-size:14px;
+    /*color:#878888;*/
+}
+.font_style
+{
+    /*font-family:rsubold;*/
+    font-family: 'Kanit', sans-serif;
+    font-size:14px;
+    color:#878888;
+}
+.top_fix
+{
+    padding:0px; 
+    margin:0px; 
+    position:fixed; 
+    display:none; 
+    top:0px; 
+    background-color:#ffffff; 
+    height:36px;
+    z-index:1;
+    box-shadow: 1px 1px 3px #888888;
+    border-bottom: solid 1px #888888;
+    behavior: url(PIE-1.0.0/PIE.htc);
+}
+.ddl
+{
+    font-size:14px;
+}
+.font_head
+{
+    /*font-family:rsubold;*/
+    font-family: 'Kanit', sans-serif;
+    font-size:17px;
+    color:#585858;
+}
+.font_warnning
+{
+    /*font-family:rsubold;*/
+    font-family: 'Kanit', sans-serif;
+    font-size:12px;
+    color:#8A0829;
+    font-weight: 700;
+}
+.font_Complete
+{
+    font-family: 'Kanit', sans-serif;
+    font-size:16px;
+    color:#328f1f;
+    font-weight: 700;
+}
+.table_head
+{
+    /*font-family:rsubold;*/
+    font-family: 'Kanit', sans-serif;
+    font-size:16px;
+    color:#ffffff;
+    background-color:#4dd2ff;
+    height:40px;
+    text-align:center;
+    border:solid 1px #d9d9d9;
+}
+.table_head:hover
+{
+    background-color:#4dd2ff;
+    /*color:#585858;*/
+}
+.table_body
+{
+    height:40px;
+    text-align:center;
+    border:solid 1px #d9d9d9;
+    color:#878888;
+}
+.loading
+{
+    position:fixed; 
+    width:100%; 
+    height:100%; 
+    padding-top:10%; 
+    display:none;
+    background-color:#FCFCFC;
+    opacity:0.4;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.onhover
+{
+    cursor:pointer;
+}
+.fix
+{
+    color:#f7170f;
+}
